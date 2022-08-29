@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/salary-clock/static/css/main.8d7cb639.css",
-    "main.js": "/salary-clock/static/js/main.ab138dc8.js",
+    "main.js": "/salary-clock/static/js/main.f326c77f.js",
     "index.html": "/salary-clock/index.html",
     "main.8d7cb639.css.map": "/salary-clock/static/css/main.8d7cb639.css.map",
-    "main.ab138dc8.js.map": "/salary-clock/static/js/main.ab138dc8.js.map"
+    "main.f326c77f.js.map": "/salary-clock/static/js/main.f326c77f.js.map"
   },
   "entrypoints": [
     "static/css/main.8d7cb639.css",
-    "static/js/main.ab138dc8.js"
+    "static/js/main.f326c77f.js"
   ]
 }
