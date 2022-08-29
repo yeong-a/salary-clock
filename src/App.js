@@ -5,6 +5,7 @@ import SettingsPopup from './components/SettingsPopup';
 function App() {
   const [salary, setSalary] = useState(0);
   const [popupVisible, setPopupVisible] = useState(false);
+  const [startTime, setStartTime] = useState(null);
 
   return (
     <div className="h-screen flex justify-center items-center bg-indigo-500">
@@ -14,11 +15,12 @@ function App() {
       >
         ⚙
       </button>
-      <Clock salary={salary} />
+      <Clock salary={salary} startTime={startTime} />
       <SettingsPopup
         visible={popupVisible}
         onClose={() => setPopupVisible(false)}
         onChangeSalary={newSalary => setSalary(newSalary)}
+        onChangeStartTime={newStartTime => setStartTime(newStartTime)}
       />
     </div>
   );
