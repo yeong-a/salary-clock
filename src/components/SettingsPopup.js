@@ -4,7 +4,7 @@ export default function SettingsPopup({ visible, onClose, onChangeSalary }) {
   const [salaryInput, setSalaryInput] = useState('0');
   return (
     visible && (
-      <div className=" w-[400px] h-[200px] flex flex-col absolute rounded-xl p-4 bg-white shadow-xl ">
+      <div className="top-[70px] right-4 w-[400px] h-[200px] flex flex-col absolute rounded-xl p-4 bg-white shadow-xl ">
         <div className="text-right">
           <button className="text-l" onClick={() => onClose()}>
             &times;
