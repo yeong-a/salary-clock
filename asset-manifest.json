@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/salary-clock/static/css/main.400c4916.css",
+    "main.js": "/salary-clock/static/js/main.8560ad68.js",
+    "index.html": "/salary-clock/index.html",
+    "main.400c4916.css.map": "/salary-clock/static/css/main.400c4916.css.map",
+    "main.8560ad68.js.map": "/salary-clock/static/js/main.8560ad68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.400c4916.css",
+    "static/js/main.8560ad68.js"
+  ]
+}
