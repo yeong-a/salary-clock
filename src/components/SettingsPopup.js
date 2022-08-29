@@ -4,25 +4,26 @@ export default function SettingsPopup({ visible, onClose, onChangeSalary }) {
   const [salaryInput, setSalaryInput] = useState('0');
   return (
     visible && (
-      <div className="top-[70px] right-4 w-[400px] h-[200px] flex flex-col absolute rounded-xl p-4 bg-white shadow-xl ">
-        <div className="text-right">
-          <button className="text-l" onClick={() => onClose()}>
-            &times;
-          </button>
+      <div className="top-[70px] right-4 w-[300px] flex flex-col absolute rounded-xl p-4 bg-white shadow-xl ">
+        <div className="text-right"></div>
+        <div className="flex-grow flex justify-center items-center whitespace-nowrap text-xl">
+          <label>월급:</label>
+          <input
+            className="ml-2 min-w-0 border-2 rounded-md py-1 px-2 hover:border-indigo-600 transition mr-1"
+            value={salaryInput}
+            onChange={e => setSalaryInput(e.target.value)}
+          />
+          원
         </div>
-        <div className="flex-grow flex justify-center items-center">
-          <label className="text-xl">
-            월급:{' '}
-            <input
-              className="border-2 rounded-md py-1 px-2"
-              value={salaryInput}
-              onChange={e => setSalaryInput(e.target.value)}
-            ></input>
-          </label>
-        </div>
-        <div className="text-right">
+        <div className="text-right mt-4">
           <button
-            className="py-2 px-6 text-xl bg-indigo-500 rounded-md text-white font-bold hover:bg-indigo-600 transition"
+            className="py-1 px-4 text-xl bg-gray-200 rounded-md text-black font-bold hover:bg-gray-300 transition mr-2"
+            onClick={() => onClose()}
+          >
+            취소
+          </button>
+          <button
+            className="py-1 px-4 text-xl bg-indigo-500 rounded-md text-white font-bold hover:bg-indigo-600 transition"
             onClick={() => {
               const newSalary = parseInt(salaryInput);
               if (isNaN(newSalary)) {

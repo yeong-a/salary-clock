@@ -10,7 +10,7 @@ function App() {
     <div className="h-screen flex justify-center items-center bg-indigo-500">
       <button
         className="absolute top-2 right-4 text-5xl transition hover:text-gray-200 text-white"
-        onClick={() => setPopupVisible(true)}
+        onClick={() => setPopupVisible(popupVisible => !popupVisible)}
       >
         ⚙
       </button>

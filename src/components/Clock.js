@@ -12,7 +12,7 @@ export default function Clock({ salary }) {
   }, [salary]);
 
   return (
-    <div className="text-8xl text-white">
+    <div className="text-8xl text-white text-center">
       <CountUp
         end={accSalary}
         duration={1}
